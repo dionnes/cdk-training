@@ -1,0 +1,26 @@
+name: Deploy Stack on AWS
+on:
+  push:
+    branches:
+      - main
+
+jobs: # jobs to run on azure pool created by actions
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    
+    - name: setup node.js 20 version
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: checkout code
+      uses: actions/checkout@v2
+
+    - name: verify code
+      run: ls  
+
+  # job2:
+  # job3:
