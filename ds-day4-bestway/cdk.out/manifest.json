@@ -1,0 +1,209 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "DsDay4BestwayStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "DsDay4BestwayStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "DsDay4BestwayStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "DsDay4BestwayStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/6f314a3fb3b65934353edc18bc0a8416d3f0e1f4333dc1ccef792d6c8a981132.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "DsDay4BestwayStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "DsDay4BestwayStack.assets"
+      ],
+      "metadata": {
+        "/DsDay4BestwayStack/ds-day4-bestway-bucket11/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsday4bestwaybucket11D8E53CF0"
+          }
+        ],
+        "/DsDay4BestwayStack/ds-day4-bestway-bucket11/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsday4bestwaybucket11PolicyE7DC92E3"
+          }
+        ],
+        "/DsDay4BestwayStack/ds-day4-bestway-bucket11/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsday4bestwaybucket11AutoDeleteObjectsCustomResource5AB30C24"
+          }
+        ],
+        "/DsDay4BestwayStack/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/DsDay4BestwayStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/DsDay4BestwayStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/DsDay4BestwayStack/ds-day4-bestway-bucket22/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsday4bestwaybucket223E2DF125"
+          }
+        ],
+        "/DsDay4BestwayStack/ds-day4-bestway-bucket22/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsday4bestwaybucket22Policy7C33E6E8"
+          }
+        ],
+        "/DsDay4BestwayStack/ds-day4-bestway-bucket22/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsday4bestwaybucket22AutoDeleteObjectsCustomResource105656DF"
+          }
+        ],
+        "/DsDay4BestwayStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DsDay4BestwayStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/DsDay4BestwayStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/DsDay4BestwayStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "DsDay4BestwayStack"
+    },
+    "DsDay4ec2allStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "DsDay4ec2allStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "DsDay4ec2allStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://992382386705/us-east-1",
+      "properties": {
+        "templateFile": "DsDay4ec2allStack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-deploy-role-992382386705-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-cfn-exec-role-992382386705-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-992382386705-us-east-1/93e84a7905324b55bd7e55baf4ae71e8d7d9b823f70236ca3c0df59a9f283e55.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "DsDay4ec2allStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-lookup-role-992382386705-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "DsDay4ec2allStack.assets"
+      ],
+      "metadata": {
+        "/DsDay4ec2allStack/dsSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsSecurityGroup922221F8"
+          }
+        ],
+        "/DsDay4ec2allStack/dsvm1/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsvm1InstanceRole5570C0EA"
+          }
+        ],
+        "/DsDay4ec2allStack/dsvm1/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsvm1InstanceProfileC732667C"
+          }
+        ],
+        "/DsDay4ec2allStack/dsvm1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dsvm18FB6CF64"
+          }
+        ],
+        "/DsDay4ec2allStack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamznamihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter"
+          }
+        ],
+        "/DsDay4ec2allStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DsDay4ec2allStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/DsDay4ec2allStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "DsDay4ec2allStack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

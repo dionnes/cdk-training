@@ -1,0 +1,20 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "93e84a7905324b55bd7e55baf4ae71e8d7d9b823f70236ca3c0df59a9f283e55": {
+      "source": {
+        "path": "DsDay4ec2allStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "992382386705-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-992382386705-us-east-1",
+          "objectKey": "93e84a7905324b55bd7e55baf4ae71e8d7d9b823f70236ca3c0df59a9f283e55.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::992382386705:role/cdk-hnb659fds-file-publishing-role-992382386705-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
