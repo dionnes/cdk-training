@@ -1,0 +1,115 @@
+{
+  "version": "36.0.0",
+  "artifacts": {
+    "DsProject1Stack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "DsProject1Stack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "DsProject1Stack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "DsProject1Stack.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/cccda49c01f70a049fed7df273c925a6a17b1d80f108777c133d126af9a88bde.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "DsProject1Stack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "DsProject1Stack.assets"
+      ],
+      "metadata": {
+        "/DsProject1Stack/DsSampleTable": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "DsSampleTable9229EA0A"
+            }
+          }
+        ],
+        "/DsProject1Stack/DsSampleTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DsSampleTable9229EA0A"
+          }
+        ],
+        "/DsProject1Stack/DsSampleFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DsSampleFunctionServiceRole5C1EAE42"
+          }
+        ],
+        "/DsProject1Stack/DsSampleFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DsSampleFunctionServiceRoleDefaultPolicy936A4845"
+          }
+        ],
+        "/DsProject1Stack/DsSampleFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DsSampleFunction54751B0E"
+          }
+        ],
+        "/DsProject1Stack/Rule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Rule4C995B7F"
+          }
+        ],
+        "/DsProject1Stack/Rule/AllowEventRuleDsProject1StackDsSampleFunction62639A49": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RuleAllowEventRuleDsProject1StackDsSampleFunction62639A49B5634D94"
+          }
+        ],
+        "/DsProject1Stack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/DsProject1Stack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/DsProject1Stack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/DsProject1Stack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "DsProject1Stack"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}
