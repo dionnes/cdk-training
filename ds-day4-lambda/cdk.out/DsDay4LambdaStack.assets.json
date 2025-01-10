@@ -1,0 +1,19 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "ba0084c6bdc4e5e4f727311dc3c927813852cbe4e9e4a2f549d8c656e2739313": {
+      "source": {
+        "path": "DsDay4LambdaStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "ba0084c6bdc4e5e4f727311dc3c927813852cbe4e9e4a2f549d8c656e2739313.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

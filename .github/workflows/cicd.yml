@@ -79,6 +79,3 @@ jobs: # jobs to run on azure pool created by actions
       run: |
         cd ds-day4-bestway/
         cdk deploy DsDay4BestwayStack --require-approval never
-    
-  # job2:
-  # job3:
